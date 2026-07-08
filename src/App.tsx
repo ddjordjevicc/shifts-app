@@ -25,7 +25,7 @@ const DEFAULT_EMPLOYEES: EmployeeDef[] = [
   { name: 'Victor', isHead: true },
   { name: 'Nikita', isHead: true },
   { name: 'Anna', isHead: false },
-  { name: 'Brooke', isHead: false },
+  { name: 'Brooooke', isHead: false },
   { name: 'Amelia', isHead: false },
   { name: 'Dogukan', isHead: false },
   { name: 'Mehj', isHead: false },
