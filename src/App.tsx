@@ -125,7 +125,7 @@ function buildDefaultOffRequests(dates: string[]): Record<string, Record<string,
 
 //function isSunday(day: string): boolean {
  // return new Date(day + 'T00:00:00').getDay() === 0;
-}
+
 
 // Single source of truth for "is this a custom full-day work assignment (Inventory,
 // Training, Catering, ...)?" Used both inside the engine (generateSchedule) and by
