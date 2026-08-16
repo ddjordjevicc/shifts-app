@@ -123,8 +123,8 @@ function buildDefaultOffRequests(dates: string[]): Record<string, Record<string,
   return out;
 }
 
-function isSunday(day: string): boolean {
-  return new Date(day + 'T00:00:00').getDay() === 0;
+//function isSunday(day: string): boolean {
+ // return new Date(day + 'T00:00:00').getDay() === 0;
 }
 
 // Single source of truth for "is this a custom full-day work assignment (Inventory,
@@ -153,7 +153,7 @@ function generateSchedule(
     JSON.stringify(required)
   );
 
-  const byName = (n: string) => employees.find((e) => e.name === n)!;
+  //const byName = (n: string) => employees.find((e) => e.name === n)!;
 
   // Has this person got a custom full-day work assignment (Inventory, Training, ...)
   // today?
@@ -277,7 +277,7 @@ function generateSchedule(
     availableShifts(emp, day).forEach((sh) => assign(emp, day, sh));
   };
 
-  const mandatoryPool = employees.filter((e) => MANDATORY_NAMES.includes(e.name));
+  // const mandatoryPool = employees.filter((e) => MANDATORY_NAMES.includes(e.name));
   const regularPool = employees.filter((e) => !MANDATORY_NAMES.includes(e.name));
   const allPool = regularPool; // the general fair-share fill only ever competes among regularPool — mandatory names are handled by their own dedicated pass below, never through fair-share competition.
 
